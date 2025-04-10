@@ -1,11 +1,13 @@
 .idea
-bert_base_uncased
+/bert_base_uncased
 data
 DEFW_all
 DEFW_all_instructioln 
 emotion_model_output
-R1-Omit-0.5B
+R1-Omit-0.5B/
 siglip-base-patch16-224
 trained_models
 whisper-large-v3
+DFEW_all/
+DFEW_all_instruction/
 

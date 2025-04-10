@@ -1,0 +1,28 @@
+[
+    {
+        "video": "/home/qixuan/Documents/R1-Omni/DFEW_all/2522.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<video>\n<audio>\nAs an emotional recognition expert; throughout the video, which emotion conveyed by the characters is the most obvious to you?"
+            },
+            {
+                "from": "gpt",
+                "value": "sad"
+            }
+        ]
+    },
+    {
+        "video": "/home/qixuan/Documents/R1-Omni/DFEW_all/2536.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<video>\n<audio>\nAs an emotional recognition expert; throughout the video, which emotion conveyed by the characters is the most obvious to you?"
+            },
+            {
+                "from": "gpt",
+                "value": "disgust"
+            }
+        ]
+    }
+]
