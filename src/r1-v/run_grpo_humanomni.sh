@@ -16,7 +16,7 @@ WANDB_MODE=offline torchrun --nproc_per_node="1" \
     src/open_r1/grpo.py \
     --output_dir ./outputs/test_humanomni_emer_1format_withpath_withchoice/ \
     --model_name_or_path /home/qixuan/Documents/R1-Omni/siglip-base-patch16-224 \
-    --dataset_name /mnt/data/jiaxing.zjx/code/R1-V-Qwen/R1-V/leonardPKU/clevr_cogen_a_train \
+    --dataset_name /home/qixuan/Documents/R1-Omni/DFEW_all \
     --deepspeed local_scripts/zero3.json \
     --max_prompt_length 512 \
     --max_completion_length 512 \
@@ -36,3 +36,4 @@ WANDB_MODE=offline torchrun --nproc_per_node="1" \
 
 
 #        --model_name_or_path /mnt/data/jiaxing.zjx/code/HumanOmni/work_dirs/humanomniqwen2_siglip/finetune_HumanOmni_1B_Omni_emer_withchoice \
+#    --dataset_name /mnt/data/jiaxing.zjx/code/R1-V-Qwen/R1-V/leonardPKU/clevr_cogen_a_train \

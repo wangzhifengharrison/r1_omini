@@ -1,5 +1,5 @@
 # R1-Omni: Explainable Omni-Multimodal Emotion Recognition with Reinforcement Learning
-# connect to gpu
+# connect to gpu by tailscale
 ssh 100.65.74.88
 
 # New for command
