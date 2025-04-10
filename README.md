@@ -1,4 +1,7 @@
 # R1-Omni: Explainable Omni-Multimodal Emotion Recognition with Reinforcement Learning
+# connect to gpu
+ssh 100.65.74.88
+
 # New for command
 conda activate R1-Omni
 

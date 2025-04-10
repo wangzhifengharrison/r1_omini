@@ -249,8 +249,10 @@ class HumanOmniVLGRPOTrainer(Trainer):
                 model, 
                 trust_remote_code=True
             )
-            config.mm_vision_tower = '/mnt/data/jiaxing.zjx/code/R1-V-Qwen/R1-V/google/siglip-base-patch16-224'
-            config.mm_audio_tower = '/mnt/data/jiaxing.zjx/code/R1-V-Qwen/R1-V/whisper-large-v3'
+            # config.mm_vision_tower = '/mnt/data/jiaxing.zjx/code/R1-V-Qwen/R1-V/google/siglip-base-patch16-224'
+            # config.mm_audio_tower = '/mnt/data/jiaxing.zjx/code/R1-V-Qwen/R1-V/whisper-large-v3'
+            config.mm_vision_tower = '/home/qixuan/Documents/R1-Omni/siglip-base-patch16-224'
+            config.mm_audio_tower = '/home/qixuan/Documents/R1-Omni/whisper-large-v3'
             model = VLLMs["HumanOmni_qwen2"].from_pretrained(
                 model,
                 config=config,
