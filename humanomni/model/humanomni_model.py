@@ -46,6 +46,7 @@ class HumanOmniQwen2ForCausalLM(Qwen2ForCausalLM,HumanOmniMetaForCausalLM):
     config_class = HumanOmniQwen2Config
 
     def __init__(self, config, **kwargs):
+        print('/home/qixuan/Documents/R1-Omni/humanomni/model/humanomni_model.py 49', config)
         super(Qwen2ForCausalLM, self).__init__(config)
         self.model = HumanOmniQwen2Model(config)
         self.vocab_size = config.vocab_size

@@ -8,14 +8,14 @@ mkdir -p ./logs
 # 打印日志路径以确认
 echo "Log path set to: $LOG_PATH"
 
-WANDB_MODE=offline torchrun --nproc_per_node="8" \
+WANDB_MODE=offline torchrun --nproc_per_node="1" \
     --nnodes="1" \
     --node_rank="0" \
     --master_addr="127.0.0.1" \
     --master_port="12346" \
     src/open_r1/grpo.py \
     --output_dir ./outputs/test_humanomni_emer_1format_withpath_withchoice/ \
-    --model_name_or_path /mnt/data/jiaxing.zjx/code/HumanOmni/work_dirs/humanomniqwen2_siglip/finetune_HumanOmni_1B_Omni_emer_withchoice \
+    --model_name_or_path /home/qixuan/Documents/R1-Omni/siglip-base-patch16-224 \
     --dataset_name /mnt/data/jiaxing.zjx/code/R1-V-Qwen/R1-V/leonardPKU/clevr_cogen_a_train \
     --deepspeed local_scripts/zero3.json \
     --max_prompt_length 512 \
@@ -32,4 +32,7 @@ WANDB_MODE=offline torchrun --nproc_per_node="8" \
     --run_name Qwen2-VL-2B-GRPO-emotion \
     --save_steps 1000 \
     --save_only_model true \
-    --num_generations 8   # number of outputs G in grpo, reduce it would lead to faster training and smaller memory cost but higher variance  
+    --num_generations 8   # number of outputs G in grpo, reduce it would lead to faster training and smaller memory cost but higher variance
+
+
+#        --model_name_or_path /mnt/data/jiaxing.zjx/code/HumanOmni/work_dirs/humanomniqwen2_siglip/finetune_HumanOmni_1B_Omni_emer_withchoice \

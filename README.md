@@ -1,4 +1,12 @@
 # R1-Omni: Explainable Omni-Multimodal Emotion Recognition with Reinforcement Learning
+# New for command
+conda activate R1-Omni
+
+1. 
+python train_tina_v2.py   --modal video_audio   --model_path ./R1-Omni-0.5B   --train_csv ./DFEW_all_instruction/set_1_train_test_only_100_samples.csv   --output_dir ./trained_models   --batch_size 2   --learning_rate 2e-5   --num_epochs 5
+
+
+
 
 [![ModelScope](https://img.shields.io/badge/ModelScope-R1Omni-blue)](https://modelscope.cn/models/iic/R1-Omni-0.5B)
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-R1Omni-yellow)](https://huggingface.co/StarJiaxing/R1-Omni-0.5B)
