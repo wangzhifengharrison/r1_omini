@@ -10,4 +10,17 @@ trained_models
 whisper-large-v3
 DFEW_all/
 DFEW_all_instruction/
+Qwen2.5-0.5B-Instruct
+Qwen2-VL-2B-Instruct
 
+.access^
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+
+# Ignore large model files
+Qwen2.5-0.5B-Instruct/model.safetensors
