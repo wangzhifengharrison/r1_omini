@@ -24,3 +24,10 @@ Qwen2-VL-2B-Instruct
 
 # Ignore large model files
 Qwen2.5-0.5B-Instruct/model.safetensors
+src/r1-v/wandb/
+src/r1-v/logs/
+src/r1-v/data/
+src/r1-v/results/
+src/r1-v/checkpoints/
+src/r1-v/models/
+src/r1-v/utils/
